@@ -1,0 +1,55 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/B24 Ex04 Michal 206990723 Yehonatan 211398375/FileContentIndex/15eb3f60-6845-42d4-b657-4e8c7ef2a1ab.vsidx
+/.vs/B24 Ex04 Michal 206990723 Yehonatan 211398375/FileContentIndex/1cf1ce8c-358f-43a7-a97e-6c298e816f0a.vsidx
+/.vs/B24 Ex04 Michal 206990723 Yehonatan 211398375/FileContentIndex/2e08eb68-7e49-42a5-9052-cf3c194c81a9.vsidx
+/.vs/B24 Ex04 Michal 206990723 Yehonatan 211398375/FileContentIndex/62fc1e07-dc70-435e-823a-fba0489168a6.vsidx
+/.vs/B24 Ex04 Michal 206990723 Yehonatan 211398375/FileContentIndex/65d9ce62-6fd8-4ac3-9f62-d018600a9017.vsidx
+/.vs/B24 Ex04 Michal 206990723 Yehonatan 211398375/FileContentIndex/9b8e7df4-6bfe-4e73-b94c-6e192de68f1e.vsidx
+/.vs/B24 Ex04 Michal 206990723 Yehonatan 211398375/FileContentIndex/ac7d69f9-34cd-4e42-9965-5dcd97cfe426.vsidx
+/.vs/B24 Ex04 Michal 206990723 Yehonatan 211398375/FileContentIndex/ffd4fecf-0462-4a3d-bd65-9d4ccb072ed4.vsidx
+/.vs/B24 Ex04 Michal 206990723 Yehonatan 211398375/v17/.suo
+/.vs/B24 Ex04 Michal 206990723 Yehonatan 211398375/v17/DocumentLayout.json
+/Ex04.Menus.Events/.vs/Ex04.Menus.Events.csproj.dtbcache.json
+/Ex04.Menus.Events/bin/Debug/Ex04.Menus.Events.dll
+/Ex04.Menus.Events/bin/Debug/Ex04.Menus.Events.dll.config
+/Ex04.Menus.Events/bin/Debug/Ex04.Menus.Events.pdb
+/Ex04.Menus.Interfaces/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+/Ex04.Menus.Interfaces/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+/Ex04.Menus.Interfaces/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/Ex04.Menus.Interfaces/obj/Debug/Ex04.Menus.Interfaces.csproj.CoreCompileInputs.cache
+/Ex04.Menus.Interfaces/obj/Debug/Ex04.Menus.Interfaces.csproj.FileListAbsolute.txt
+/Ex04.Menus.Interfaces/obj/Debug/Ex04.Menus.Interfaces.dll
+/Ex04.Menus.Interfaces/obj/Debug/Ex04.Menus.Interfaces.pdb
+/Ex04.Menus.Test/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+/Ex04.Menus.Test/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+/Ex04.Menus.Test/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/Ex04.Menus.Test/obj/Debug/Ex04.Men.94AED04F.Up2Date
+/Ex04.Menus.Test/obj/Debug/Ex04.Menus.Test.csproj.AssemblyReference.cache
+/Ex04.Menus.Test/obj/Debug/Ex04.Menus.Test.csproj.CoreCompileInputs.cache
+/Ex04.Menus.Test/obj/Debug/Ex04.Menus.Test.csproj.FileListAbsolute.txt
+/Ex04.Menus.Test/obj/Debug/Ex04.Menus.Test.exe
+/Ex04.Menus.Test/obj/Debug/Ex04.Menus.Test.pdb
+/Ex04.Menus.Events/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+/Ex04.Menus.Events/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/Ex04.Menus.Events/obj/Debug/Ex04.Menus.Events.csproj.CoreCompileInputs.cache
+/Ex04.Menus.Events/obj/Debug/Ex04.Menus.Events.csproj.FileListAbsolute.txt
+/Ex04.Menus.Events/obj/Debug/Ex04.Menus.Events.dll
+/Ex04.Menus.Events/obj/Debug/Ex04.Menus.Events.pdb
+/.vs/B24 Ex04 Michal 206990723 Yehonatan 211398375/FileContentIndex/d125a094-3d0e-450a-8fa2-cd3d164a64ba.vsidx
+/Ex04.Menus.Test/bin/Debug/Ex04.Menus.Events.dll
+/Ex04.Menus.Test/bin/Debug/Ex04.Menus.Events.dll.config
+/Ex04.Menus.Test/bin/Debug/Ex04.Menus.Events.pdb
+/Ex04.Menus.Test/bin/Debug/Ex04.Menus.Interfaces.dll
+/Ex04.Menus.Test/bin/Debug/Ex04.Menus.Interfaces.dll.config
+/Ex04.Menus.Test/bin/Debug/Ex04.Menus.Interfaces.pdb
+/Ex04.Menus.Test/bin/Debug/Ex04.Menus.Test.exe
+/Ex04.Menus.Test/bin/Debug/Ex04.Menus.Test.exe.config
+/Ex04.Menus.Test/bin/Debug/Ex04.Menus.Test.pdb
+/Ex04.Menus.Interfaces/.vs/Ex04.Menus.Interfaces.csproj.dtbcache.json
+/Ex04.Menus.Interfaces/bin/Debug/Ex04.Menus.Interfaces.dll
+/Ex04.Menus.Interfaces/bin/Debug/Ex04.Menus.Interfaces.dll.config
+/Ex04.Menus.Interfaces/bin/Debug/Ex04.Menus.Interfaces.pdb
+/Ex04.Menus.Test/.vs/Ex04.Menus.Test.csproj.dtbcache.json
