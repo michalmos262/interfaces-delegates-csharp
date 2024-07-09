@@ -1,22 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 
-
 namespace Ex04.Menus.Interfaces
 {
-    internal class MenuItem
+    public class MenuItem
     {
-        private readonly string r_Name;
+        private readonly string r_Title;
         private readonly MenuItem r_Parent;
-        private List<MenuItem> m_SubItems;
-        private const char k_GoToParentItemButton = '0';
+        private readonly List<MenuItem> r_SubItems = new List<MenuItem>();
+        private List<IMenuItemSelectedListener> m_ItemSelectedListeners = new List<IMenuItemSelectedListener>();
+        private const char k_ExitButton = '0';
         private const string k_ItemSymbol = "->";
-        private const string k_GoToParentItemMessage = "Back";
-        private const string k_ExitMessage = "Exit";
+        private const string k_LineSeparator = "----------------------";
 
-        public MenuItem(string i_Name, MenuItem i_Parent = null)
+        public MenuItem(string iTitle, MenuItem i_Parent = null)
         {
-            r_Name = i_Name;
+            r_Title = iTitle;
             if (i_Parent != this)
             {
                 r_Parent = i_Parent;
@@ -27,36 +26,77 @@ namespace Ex04.Menus.Interfaces
             }
         }
 
-        public string Name
+        public int SubItemsCount
         {
-            get 
-            { 
-                return r_Name; 
-            }
-        }
-
-        public void Show()
-        {
-            string title = r_Parent == null ? r_Name : r_Parent.Name;
-            string goToParentMessage = r_Parent == null ? k_ExitMessage : k_GoToParentItemMessage;
-
-            Console.Clear();
-            Console.WriteLine(title);
-            showSubItemsNames();
-            Console.WriteLine(goToParentMessage);
-        }
-
-        public void AddSubItem(MenuItem i_SubItem)
-        {
-            m_SubItems.Add(i_SubItem);
-        }
-
-        private void showSubItemsNames()
-        {
-            for (int i = 0; i < m_SubItems.Count; i++)
+            get
             {
-                Console.WriteLine($"{i + 1}. {k_ItemSymbol} {m_SubItems[i].r_Name}");
+                return r_SubItems.Count;
             }
+        }
+
+        public char ExitButton
+        {
+            get
+            {
+                return k_ExitButton;
+            }
+        }
+
+        public MenuItem Parent
+        {
+            get
+            {
+                return r_Parent;
+            }
+        }
+
+        private void printMenu(string i_ExitMessage)
+        {
+            Console.WriteLine($"**{r_Title}**");
+            Console.WriteLine(k_LineSeparator);
+            for (int i = 0; i < r_SubItems.Count; i++)
+            {
+                Console.WriteLine($"{i + 1} {k_ItemSymbol} {r_SubItems[i].r_Title}");
+            }
+
+            Console.WriteLine($"{k_ExitButton} {k_ItemSymbol} {i_ExitMessage}");
+            Console.WriteLine(k_LineSeparator);
+            Console.WriteLine("Please enter menu option (1 to {0} or press '{1}' to {2}):",
+                r_SubItems.Count, k_ExitButton, i_ExitMessage);
+        }
+
+        public void Show(string i_ExitMenu)
+        {
+            Console.Clear();
+            if (r_SubItems.Count > 0)
+            {
+                printMenu(i_ExitMenu);
+            }
+        }
+
+        public MenuItem AddSubItem(string i_SubItemTitle)
+        {
+            MenuItem subItem = new MenuItem(i_SubItemTitle, this);
+            r_SubItems.Add(subItem);
+            return subItem;
+        }
+
+        public void AddItemSelectedListener(IMenuItemSelectedListener i_ItemSelectedListener)
+        {
+            m_ItemSelectedListeners.Add(i_ItemSelectedListener);
+        }
+
+        public void NotifyAllItemSelectedListeners()
+        {
+            foreach (IMenuItemSelectedListener itemSelectedListener in m_ItemSelectedListeners)
+            {
+                itemSelectedListener.ReportItemSelectedInMenu();
+            }
+        }
+
+        public MenuItem GetSubItemByIndex(int i_SubItemIndex)
+        {
+            return r_SubItems[i_SubItemIndex];
         }
     }
 }
