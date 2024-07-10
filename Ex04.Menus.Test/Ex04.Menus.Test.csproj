@@ -36,6 +36,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InterfaceNestedClasses\CountCapitals.cs" />
+    <Compile Include="InterfaceNestedClasses\ShowDate.cs" />
+    <Compile Include="InterfaceNestedClasses\ShowTime.cs" />
     <Compile Include="InterfacesTest.cs" />
     <Compile Include="InterfaceNestedClasses\ShowVersion.cs" />
     <Compile Include="TestMethods.cs" />

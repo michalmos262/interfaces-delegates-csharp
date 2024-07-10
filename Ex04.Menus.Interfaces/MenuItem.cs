@@ -86,7 +86,7 @@ namespace Ex04.Menus.Interfaces
             m_ItemSelectedListeners.Add(i_ItemSelectedListener);
         }
 
-        public void NotifyAllItemSelectedListeners()
+        private void notifyAllItemSelectedListeners()
         {
             foreach (IMenuItemSelectedListener itemSelectedListener in m_ItemSelectedListeners)
             {
@@ -97,6 +97,14 @@ namespace Ex04.Menus.Interfaces
         public MenuItem GetSubItemByIndex(int i_SubItemIndex)
         {
             return r_SubItems[i_SubItemIndex];
+        }
+
+        public void SelectItemAndNotifyListeners()
+        {
+            Console.Clear();
+            notifyAllItemSelectedListeners();
+            Console.WriteLine("Enter any key to continue...");
+            Console.ReadKey();
         }
     }
 }

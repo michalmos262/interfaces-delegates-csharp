@@ -11,7 +11,26 @@ namespace Ex04.Menus.Test
 
         public static void CountCapitals()
         {
-            //TODO - count capitals
+            Console.WriteLine("Please enter a sentence:");
+            string input = Console.ReadLine();
+            int capitalCount = 0;
+            
+            foreach (char c in input)
+            {
+                if (char.IsUpper(c))
+                {
+                    capitalCount++;
+                }
+            }
+
+            if (capitalCount == 1)
+            {
+                Console.WriteLine("There is 1 capital letter in your sentence.");
+            }
+            else
+            {
+                Console.WriteLine($"There are {capitalCount} capital letters in your sentence.");
+            }
         }
 
         public static void ShowTime()
