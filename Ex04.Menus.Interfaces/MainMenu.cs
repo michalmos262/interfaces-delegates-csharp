@@ -83,7 +83,7 @@ namespace Ex04.Menus.Interfaces
                     m_CurrentItem = m_CurrentItem.GetSubItemByIndex(userChoice - 1);
                     if (m_CurrentItem.SubItemsCount == 0)
                     {
-                        m_CurrentItem.NotifyAllItemSelectedListeners();
+                        m_CurrentItem.SelectItemAndNotifyListeners();
                         m_CurrentItem = m_CurrentItem.Parent;
                     }
                 }

@@ -11,11 +11,10 @@ namespace Ex04.Menus.Test
             MenuItem versionAndCapitalItem = menu.AddSubItem("Version And Capitals");
             MenuItem dateAndTimeItem = menu.AddSubItem("Show Date/Time");
 
-            //TODO - show capitals
-            //TODO - show date
-            //TODO - show time
-            
             ShowVersion showVersion = new ShowVersion(versionAndCapitalItem);
+            CountCapitals countCapitals = new CountCapitals(versionAndCapitalItem);
+            ShowTime showTime = new ShowTime(dateAndTimeItem);
+            ShowDate showDate = new ShowDate(dateAndTimeItem);
 
             return menu;
         }
