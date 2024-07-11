@@ -6,20 +6,20 @@ namespace Ex04.Menus.Test
     {
         public static MainMenu InitMenu()
         {
-            MainMenu delegateMenu = new MainMenu("Delegates Main Menu");
-            MenuItem versionCapitalMenu = delegateMenu.AddSubItem("Version And Capitals");
-            MenuItem countCapitals = versionCapitalMenu.AddSubItem("Count Capitals");
-            MenuItem showVersion = versionCapitalMenu.AddSubItem("Show Version");
-            MenuItem dateTimeMenu = delegateMenu.AddSubItem("Show Date/Time");
-            MenuItem showDate = dateTimeMenu.AddSubItem("Show Date");
-            MenuItem showTime = dateTimeMenu.AddSubItem("Show Time");
+            MainMenu menu = new MainMenu("Delegates Main Menu");
+            MenuItem versionAndCapitalsItem = menu.AddSubItem("Version And Capitals");
+            MenuItem countCapitalsItem = versionAndCapitalsItem.AddSubItem("Count Capitals");
+            MenuItem showVersionItem = versionAndCapitalsItem.AddSubItem("Show Version");
+            MenuItem dateAndTimeItem = menu.AddSubItem("Show Date/Time");
+            MenuItem showDateItem = dateAndTimeItem.AddSubItem("Show Date");
+            MenuItem showTimeItem = dateAndTimeItem.AddSubItem("Show Time");
 
-            showVersion.Selected += showVersion_Select;
-            countCapitals.Selected += countCapitals_Select;
-            showDate.Selected += showDate_Select;
-            showTime.Selected += showTime_Select;
+            showVersionItem.Selected += showVersion_Select;
+            countCapitalsItem.Selected += countCapitals_Select;
+            showDateItem.Selected += showDate_Select;
+            showTimeItem.Selected += showTime_Select;
 
-            return delegateMenu;
+            return menu;
         }
 
         private static void showVersion_Select()
