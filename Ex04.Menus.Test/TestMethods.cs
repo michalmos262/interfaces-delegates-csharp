@@ -22,7 +22,6 @@ namespace Ex04.Menus.Test
                     capitalCount++;
                 }
             }
-
             if (capitalCount == 1)
             {
                 Console.WriteLine("There is 1 capital letter in your sentence.");

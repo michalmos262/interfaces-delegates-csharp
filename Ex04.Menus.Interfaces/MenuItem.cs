@@ -78,6 +78,7 @@ namespace Ex04.Menus.Interfaces
         {
             MenuItem subItem = new MenuItem(i_SubItemTitle, this);
             r_SubItems.Add(subItem);
+
             return subItem;
         }
 
@@ -103,7 +104,7 @@ namespace Ex04.Menus.Interfaces
         {
             Console.Clear();
             notifyAllItemSelectedListeners();
-            Console.WriteLine("Enter any key to continue...");
+            Console.WriteLine("Please enter any key to go back to menu...");
             Console.ReadKey();
         }
     }
