@@ -10,7 +10,6 @@ namespace Ex04.Menus.Test
             MainMenu menu = new MainMenu("Interface Main Menu");
             MenuItem versionAndCapitalItem = menu.AddSubItem("Version And Capitals");
             MenuItem dateAndTimeItem = menu.AddSubItem("Show Date/Time");
-
             ShowVersion showVersion = new ShowVersion(versionAndCapitalItem);
             CountCapitals countCapitals = new CountCapitals(versionAndCapitalItem);
             ShowTime showTime = new ShowTime(dateAndTimeItem);

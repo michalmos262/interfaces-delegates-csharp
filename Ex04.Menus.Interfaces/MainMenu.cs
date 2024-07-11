@@ -32,8 +32,7 @@ namespace Ex04.Menus.Interfaces
                        && i_UserInput != r_MainItem.ExitButton.ToString())
             {
                 throw new ArgumentException(string.Format("Invalid menu option! Option should be a number" +
-                                                   
-                                                          " between 1 to {0} or {1}", r_MainItem.SubItemsCount,
+                                                          " between 1 to {0} or {1}", r_MainItem.SubItemsCount, 
                     r_MainItem.ExitButton));
             }
         }
