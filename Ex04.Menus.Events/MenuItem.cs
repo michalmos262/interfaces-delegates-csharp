@@ -13,9 +13,9 @@ namespace Ex04.Menus.Events
         private const string k_ItemSymbol = "->";
         private const string k_LineSeparator = "----------------------";
 
-        public MenuItem(string iTitle, MenuItem i_Parent = null)
+        public MenuItem(string i_Title, MenuItem i_Parent = null)
         {
-            r_Title = iTitle;
+            r_Title = i_Title;
             if (i_Parent != this)
             {
                 r_Parent = i_Parent;
